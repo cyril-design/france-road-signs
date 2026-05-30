@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Cyril K", email = "cyrilk@tuta.io"}
 ]
 keywords = ["web-crawler", "scraping", "python", "french-roads"]
 classifiers = [
@@ -53,8 +53,9 @@ Homepage = "https://github.com/cyril-design/france-road-signs"
 Repository = "https://github.com/cyril-design/france-road-signs.git"
 Issues = "https://github.com/cyril-design/france-road-signs/issues"
 
-[tool.setuptools]
-packages = ["src", "tests"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
 
 [tool.black]
 line-length = 88
