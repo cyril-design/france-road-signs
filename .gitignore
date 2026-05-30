@@ -1,0 +1,5 @@
+# Python virtualenv
+.venv
+
+# packaging metadata
+france_road_signs.egg-info
